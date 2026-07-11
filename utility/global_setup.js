@@ -1,5 +1,6 @@
 import { chromium } from "@playwright/test";
 
+
 export default async function global_setup(config) {
     console.log("Framewordk started");
     let app_url = config.projects[0].use.baseURL;
