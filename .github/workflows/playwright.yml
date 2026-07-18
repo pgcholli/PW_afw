@@ -1,6 +1,6 @@
 name: Run Tests with Playwright
 on:
-  [push]:
+    [push]
 
 jobs:
   test:
