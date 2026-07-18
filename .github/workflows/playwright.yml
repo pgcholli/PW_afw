@@ -2,21 +2,21 @@ name: Run Tests with Playwright
 on:
   [push]:
 
-  jobs:
-    test:
-      runs-on: ubuntu-latest
+jobs:
+  test:
+    runs-on: ubuntu-latest
       
-      steps:
-        - uses: actions/checkout@v4
+    steps:
+      - uses: actions/checkout@v4
 
-        - uses: actions/setup-node@v4
-          with:
-            node-version: '18'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
         
-        -  run: npm ci
+      -  run: npm ci
       
-        -  run: npx playwright install --with-deps
+      -  run: npx playwright install --with-deps
        
-        -  run: npx playwright test
+      -  run: npx playwright test
 
  
