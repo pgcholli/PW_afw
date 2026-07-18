@@ -10,7 +10,7 @@ export default defineConfig(
 
         use:
         {
-            headless: false,
+            headless: true,
             storageState: 'storage_state.json',
             baseURL: "https://pos.aksharatraining.in/login"
             // baseURL: "https://www.google.com"
